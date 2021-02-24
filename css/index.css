@@ -1,0 +1,198 @@
+/* RESET CSS */
+*{		margin:0;	padding:0; border:0;}
+a , img{		display: block;}
+p a{	display: inline;}
+li{ list-style-type: none; }
+.clear{ clear:both; }
+body{
+	font-size: 16px;
+	font-family: 'Roboto' , sans-serif;
+}
+
+header{
+	width:100%;
+	display: table;
+	padding:20px 0;	
+	position: relative;
+	z-index: 2;
+}
+header h1{
+	width:120px;
+	float:left;
+	margin:0 0 0 10%;
+	padding:5px 0 0;
+}
+header h1 a{
+	width:100%;
+}
+header h1 a img{
+	width:100%;
+}
+
+header nav{
+	width:30%;
+	height: 50px;
+	float:left;
+	margin:0 0 0 3%;
+}
+header nav > ul{
+	width:100%;
+	display: flex;
+	flex-direction: flex-start;
+}
+header nav > ul > li{
+	float:left;
+	width:20%;
+	/*margin:0px 20px;*/
+}
+header nav > ul > li > a{
+	width:100%;	
+	padding:10px 0;
+	color:black;
+	text-decoration: none;
+	padding:10px 20px;
+	font-size: 1em;
+	text-align: center;
+}
+header nav ul li a:hover{
+	text-decoration: underline;
+	background-color: #f2f2f2;
+}
+
+
+/*UL DENTRO DEL UL PRINCIPAL*/
+
+header nav > ul > li > ul{
+	width:300px;
+	background-color: grey;
+	display: none;
+}
+header nav > ul > li:hover > ul{
+	display: block;
+}
+header nav > ul > li > ul > li {
+	width:100%;
+	
+	background-color: orange;
+}
+header nav > ul > li > ul > li a{
+	width:100%;
+	padding:20px;
+	color:black;
+	text-decoration: none;
+	background-color: #f2f2f2;
+
+}
+header nav > ul > li > ul > li a:hover{
+	background-color: #e6e6e6;
+}
+div.centrado{
+	width:80%;
+	margin:0 auto;
+}
+section{
+	width:100%;
+	margin-bottom: 5px;
+}
+section.slider{
+	position: relative;
+	height: 400px;
+	background: lightgrey;
+	margin:10px 0;
+	background:no-repeat center center / cover scroll;
+}
+section.slider.uno{
+	background-image: url("../img/slider.jpeg");
+}
+section.slider.dos{
+	background-image: url("../img/slider2.jpeg");
+	color:white;
+}
+section.slider.dos div.info a{
+	color:white;
+}
+
+section.slider div.boton{
+	width:40px;
+	height: 50px;
+	background: white;
+	position: absolute;
+	top:175px;
+}
+section.slider div.boton.der{ right:0; }
+section.slider div.boton.izq{ left:0; }
+section.slider div.puntos{
+	width:100px;
+	height: 40px;
+	background: black;
+	position: absolute;
+	bottom:0;
+	left:50%;
+	margin-left: -50px;
+}
+section.slider div.info{
+	width:40%;
+/*	background: #e8e8e8;*/
+	position: absolute;
+	top:15%;
+	left:10%;
+	padding:20px;
+}
+section.slider div.info h2{
+	font-size: 2em;
+}
+section.slider div.info p{
+	margin:10px 0 15px;
+}
+section.slider div.info a{
+	text-decoration: none;
+	font-size:.8em;
+	text-transform: uppercase;
+	padding:10px 20px;
+	color:black;
+}
+section.slider div.info a.comprar{
+	background: black;
+	color:white;
+	display: inline-block;
+
+}
+section.lista{
+	display: table;
+	/*height: 200px;*/
+}
+section.lista article{
+	width:23%;
+	/*height: 200px;*/
+	/*background: #e8e8e8;*/
+	float:left;
+	margin:0 1%;
+}
+section.lista article img{
+	width:100%;
+	margin-bottom: 10px;
+}
+section.lista article a{
+	text-transform: uppercase;
+	font-size: .8em;
+	text-decoration: none;
+	color:black;
+}
+section.lista article a:hover h2{
+	text-decoration: underline;
+}
+section.lista article a:hover p.enlace{
+	text-decoration: underline;
+}
+section.lista article p.enlace{
+	color:#0067B8;
+	text-transform: uppercase;
+}
+section.lista article h2{
+	font-size: 1.5em;
+}
+section.lista article p{
+	margin:10px 0 15px;
+	text-transform: none;
+
+}
